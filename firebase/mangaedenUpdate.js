@@ -4,7 +4,7 @@
 var Firebase = require('firebase');
 var netto = require('netto');
 
-var mangaedenRef = new Firebase(process.env.FIREBASE_URL);
+var mangaedenRef = new Firebase(process.env.FB_URL);
 var mangaRef = mangaedenRef.child('manga');
 var metaRef = mangaedenRef.child('meta');
 var mangaedenPath = '/api/list/0/';

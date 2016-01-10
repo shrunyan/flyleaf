@@ -4,7 +4,7 @@
 var Firebase = require('firebase');
 var mangaEdenUpdate = require('./mangaedenUpdate');
 
-var mangaedenRef = new Firebase(process.env.FIREBASE_URL);
+var mangaedenRef = new Firebase(process.env.FB_URL);
 var mangaRef = mangaedenRef.child('manga');
 
 mangaRef.on('value', function (snap) {
